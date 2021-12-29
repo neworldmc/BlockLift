@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.fishfly233'
+version '1.0.0-SNAPSHOT'
+
+repositories {
+    maven { url = uri("https://papermc.io/repo/repository/maven-public/") }
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly("io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT")
+}
+
+test {
+    useJUnitPlatform()
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}

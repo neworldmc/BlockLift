@@ -1,0 +1,3 @@
+name: BlockLift
+version: 1.0.0
+main: com.github.fishfly233.blocklift.BlockLiftMain
